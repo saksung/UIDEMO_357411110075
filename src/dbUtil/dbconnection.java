@@ -9,7 +9,10 @@ public class dbconnection {
         try
     }
     Class.forName("org.sqlite.JDBC");
-    return DriverManager.getconnection (SQCONN);
+
+    public static String getSQCONN() {
+        return SQCONN;
+    }return DriverManager.getconnection (SQCONN);
 
 
 }//class
